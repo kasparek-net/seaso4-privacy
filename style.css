@@ -1,0 +1,35 @@
+:root { color-scheme: light dark; --ink:#16150f; --paper:#f7f4ec; --muted:#6b665b; --rule:#ded7c8; --accent:#1a6b4c; }
+@media (prefers-color-scheme: dark) { :root { --ink:#f2eee4; --paper:#1b1916; --muted:#9c9484; --rule:#322d24; --accent:#7fd9ae; } }
+* { box-sizing: border-box; }
+body { max-width: 38rem; margin: 0 auto; padding: 4rem 1.25rem 6rem; background: var(--paper); color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); }
+img { max-width: 100%; }
+
+h1 { font-family: ui-rounded, "SF Pro Rounded", system-ui, sans-serif; font-weight: 800; letter-spacing: -.03em;
+  font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.05; margin: 0 0 .3rem; }
+.tagline { color: var(--muted); margin: 0 0 2.5rem; }
+p { margin: 1.1rem 0; }
+
+.icon { width: 96px; height: 96px; border-radius: 21px; display: block; margin-bottom: 1.5rem; }
+
+.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin: 2.5rem 0; }
+.shots img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--rule); }
+.shots figure { margin: 0; }
+.shots figcaption { color: var(--muted); font-size: .78rem; margin-top: .5rem; }
+
+.links { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.2rem; margin: 2.5rem 0; }
+.cta { display: inline-block; background: var(--accent); color: var(--paper); text-decoration: none;
+  padding: .7rem 1.2rem; border-radius: 999px; font-weight: 600; }
+.cta-pending { background: none; color: var(--muted); border: 1px solid var(--rule); font-weight: 500; cursor: default; }
+
+.app { display: grid; grid-template-columns: 64px 1fr; gap: 0 1.1rem; align-items: center; color: inherit;
+  padding: 1.4rem 0; border-top: 1px solid var(--rule); text-decoration: none; }
+.apps > :last-child { border-bottom: 1px solid var(--rule); }
+.app img { width: 64px; height: 64px; border-radius: 14px; display: block; }
+.app h2 { margin: 0; font-size: 1.1rem; font-family: ui-rounded, system-ui, sans-serif; letter-spacing: -.01em; }
+.app p { margin: .2rem 0 0; color: var(--muted); font-size: .92rem; }
+.soon { font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+  border: 1px solid var(--rule); border-radius: 100px; padding: .1rem .55rem; margin-left: .45rem; vertical-align: 2px; }
+
+footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; }
